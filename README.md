@@ -70,10 +70,11 @@ my-app/
 
 # 📸 Screenshots
 🔹 Dashboard UI
+<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/2d5d5f89-709e-4fd8-8581-ab55074d813f" />
 
 🔹 Evaluation Output
 
-📌 Add your screenshots in a /screenshots/ folder in the repo so GitHub renders them correctly.
+<img width="1914" height="874" alt="image" src="https://github.com/user-attachments/assets/ed3c6cbe-88a7-4cd7-99f5-741013077cbd" />
 
 # 🛠️ Local Setup:
 ```bash

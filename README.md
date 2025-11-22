@@ -1,4 +1,4 @@
-##✅ PitchSense AI – Live Roleplay Scoring Engine
+#✅ PitchSense AI – Live Roleplay Scoring Engine
 
 A Vercel AI SDK powered pitch-evaluation tool built for the HSV Digital SDE I Round 2 Assignment.
 

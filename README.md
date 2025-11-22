@@ -15,34 +15,88 @@ Includes guardrails, clean UI, and result visualization.
 👉 https://live-roleplay-scoring-engine.vercel.app/
 
 
-# 🚀 Features
+# ✨ Key Features
 🔹 Live Pitch Evaluation
 
-Paste a transcript → AI returns structured scoring JSON.
+Paste any pitch → system evaluates:
 
-🔹 Guardrails Implemented
+Overall Score
 
-Profanity detection
+Clarity
 
-Input length limits
+Depth
 
-Strict JSON-only outputs (no chain-of-thought leakage)
+Structure
 
-Basic per-IP rate limiting (5 requests/min)
+AI-generated insights
 
-🔹 Clean Dashboard UI
+Final verdict summary
 
-Simple sidebar + form + evaluation result panel.
+All returned in clean JSON.
 
-🔹 Built with Modern Stack
+🔹 Advanced Guardrails
 
-Next.js 14
+Built for reliability and safety:
 
-Vercel AI SDK
+JSON-strict responses
 
-OpenRouter Models
+Zod schema validation
 
-Zod Schema Validation
+Input sanitization
+
+Basic rate-limiting
+
+No chain-of-thought leak
+
+Auto-repair for malformed JSON
+
+🔹 Premium Dashboard UI (Light + Dark Mode)
+
+A modern SaaS-like interface:
+
+Upgraded sidebar navigation
+
+Smooth active-highlight animations
+
+Premium card design
+
+Compact grid layout
+
+Centralized content container
+
+Fully responsive
+
+🔹 Smart Metrics & Trends
+
+The system computes:
+
+Average score
+
+Best score
+
+Category averages
+
+Score distribution
+
+Strength vs. weakness
+
+Auto-generated improvement tips
+
+Displayed with clean visual bars.
+
+🔹 History Panel (Local Storage)
+
+Stores your last 5 evaluations:
+
+Score
+
+Snippet preview
+
+Timestamp
+
+Click to reload pitch + results
+
+Zero backend database required.
 
 # 🧩 Tech Stack
 | Component         | Technology                     |

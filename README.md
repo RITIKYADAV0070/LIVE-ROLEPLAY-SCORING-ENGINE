@@ -1,118 +1,125 @@
-🚀 LIVE ROLEPLAY SCORING ENGINE
-PitchSense AI – SDE I Round 2 Assignment (Option A)
+##✅ PitchSense AI – Live Roleplay Scoring Engine
 
-This repository contains my submission for PitchSense AI — SDE I Round 2, implementing Option A: Live Roleplay Scoring Engine using the Vercel AI SDK.
+A Vercel AI SDK powered pitch-evaluation tool built for the HSV Digital SDE I Round 2 Assignment.
 
-The application evaluates a pitch transcript and returns a structured JSON output with scoring, category breakdown, insights, and a final verdict.
-It includes guardrails, JSON enforcement, and a clean fresher-friendly dashboard UI.
+This project evaluates pitch transcripts using an LLM and returns structured JSON containing:
+✔ Score
+✔ Category scores
+✔ Insights
+✔ Verdict summary
 
-⭐ Features
-✅ LLM Evaluation (Vercel AI SDK)
+All evaluation is done via Vercel AI SDK using an OpenRouter model.
+Includes guardrails, clean UI, and result visualization.
 
-Uses generateText() from the official Vercel AI SDK to call OpenRouter models.
+# 🚀 Features
+🔹 Live Pitch Evaluation
 
-✅ Structured, Stable JSON Output
+Paste a transcript → AI returns structured scoring JSON.
 
-The backend guarantees the following format:
+🔹 Guardrails Implemented
 
-{
-  "score": 0.82,
-  "category_scores": {
-    "clarity": 0.9,
-    "depth": 0.75,
-    "structure": 0.8
-  },
-  "insights": [
-    "Strong clarity and problem description",
-    "Could include more market depth"
-  ],
-  "verdict": "Clear and well-structured pitch with room for added detail."
-}
+Profanity detection
 
-✅ Guardrails Implemented
+Input length limits
 
-Profanity detector
+Strict JSON-only outputs (no chain-of-thought leakage)
 
-Transcript length validator
+Basic per-IP rate limiting (5 requests/min)
 
-Strict JSON-only enforcement
+🔹 Clean Dashboard UI
 
-No chain-of-thought
+Simple sidebar + form + evaluation result panel.
 
-Simple rate limiter (5 req/min/IP)
-
-✅ Dashboard UI
-
-Sidebar layout
-
-Clean & simple fresher-friendly design
-
-Dark/Light mode toggle
-
-Score, category scores, insights, verdict
-
-Saves past evaluations locally
-
-✅ Deployable on Vercel
-
-Zero-config deployment support for Next.js.
-
-🧩 Project Structure
-
-my-app/
- ├── pages/
- │    ├── index.js               # Main dashboard UI
- │    └── api/
- │         └── evaluate.js       # Evaluation API endpoint (core of assignment)
- ├── styles/
- ├── public/
- ├── .env.local                  # (ignored) API keys
- ├── package.json
- ├── next.config.mjs
- └── README.md
-
-🛠 Tech Stack
+🔹 Built with Modern Stack
 
 Next.js 14
 
-React
+Vercel AI SDK
 
-Vercel AI SDK (ai)
+OpenRouter Models
 
-OpenRouter LLM provider
+Zod Schema Validation
 
-Zod validation
+#🧩 Tech Stack
+Component	Technology
+Framework	Next.js
+AI	Vercel AI SDK + OpenRouter
+Schema Validation	Zod
+Deployment	Vercel
+UI	Custom React Dashboard
 
-LocalStorage history
+#📂 Project Structure
+my-app/
+│
+├── pages/
+│   ├── index.js              # Main dashboard UI
+│   └── api/
+│       └── evaluate.js       # Core Evaluation API (Vercel AI SDK)
+│
+├── public/                    # Static assets
+├── styles/                    # Global CSS / UI styles
+│
+├── .env.local                 # API keys (ignored in Git)
+├── package.json
+├── next.config.mjs
+└── README.md
 
-🔐 Environment Variables
+#📸 Screenshots
+🔹 Dashboard UI
 
-Create a file named .env.local:
+🔹 Evaluation Output
 
-OPENROUTER_API_KEY=your_api_key_here
-AI_MODEL=meta-llama/llama-3.1-70b-instruct
+📌 Add your screenshots in a /screenshots/ folder in the repo so GitHub renders them correctly.
 
+#🛠️ Local Setup:
 
-⚠️ .env.local is ignored from Git and should NOT be uploaded.
-
-▶️ Installation & Running Locally
-git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE
-cd LIVE-ROLEPLAY-SCORING-ENGINE
+git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE.git
+cd LIVE-ROLEPLAY-SCORING-ENGINE/my-app
 npm install
 npm run dev
 
 
-App runs at:
-👉 http://localhost:3000
+# Create .env.local:
 
-🌐 Deployment (Vercel)
+OPENROUTER_API_KEY=your_key_here
+AI_MODEL=meta-llama/llama-3.1-70b-instruct
 
-Go to https://vercel.com
+📡 API Endpoint: /api/evaluate
 
-Import this repository
+Method: POST
+Body:
 
-Add the 2 environment variables
+{
+  "transcript": "Your pitch transcript here..."
+}
 
-Click Deploy
 
-Copy the live URL for submission
+# Response:
+
+{
+  "ok": true,
+  "result": {
+    "score": 0.82,
+    "category_scores": {
+      "clarity": 0.9,
+      "depth": 0.75,
+      "structure": 0.8
+    },
+    "insights": ["...", "..."],
+    "verdict": "..."
+  }
+}
+
+# 🎥 Loom Video Summary (Script Included)
+
+I’ve prepared your perfect Loom script here:
+👉 “Explain what to say step-by-step”
+https://chat.openai.com/share/placeholder
+
+(Ask again and I’ll generate the exact video script.)
+
+# 📬 Author
+
+Ritik Yadav
+AI Engineer & Full-Stack Developer
+

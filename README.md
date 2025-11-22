@@ -75,19 +75,22 @@ my-app/
 📌 Add your screenshots in a /screenshots/ folder in the repo so GitHub renders them correctly.
 
 # 🛠️ Local Setup:
+```bash
 
 git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE.git
 cd LIVE-ROLEPLAY-SCORING-ENGINE/my-app
 npm install
 npm run dev
-
+```
 
 # Create .env.local:
+```bash
 
 OPENROUTER_API_KEY=your_key_here
 AI_MODEL=meta-llama/llama-3.1-70b-instruct
-
+```
 📡 API Endpoint: /api/evaluate
+```bash
 
 Method: POST
 Body:
@@ -95,9 +98,10 @@ Body:
 {
   "transcript": "Your pitch transcript here..."
 }
-
+```
 
 # Response:
+```bash
 
 {
   "ok": true,
@@ -112,7 +116,7 @@ Body:
     "verdict": "..."
   }
 }
-
+```
 # 🎥 Loom Video Summary (Script Included)
 
 I’ve prepared your perfect Loom script here:

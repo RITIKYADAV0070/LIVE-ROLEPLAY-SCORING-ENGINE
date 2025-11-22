@@ -74,14 +74,20 @@ my-app/
 
 # 📸 Screenshots
 🔹 Dashboard UI
-<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/2d5d5f89-709e-4fd8-8581-ab55074d813f" />
+<img width="1912" height="875" alt="image" src="https://github.com/user-attachments/assets/472e82a9-d356-43b2-8f6e-693b2037c2e3" />
+
 
 🔹 Evaluation Output
+<img width="1899" height="878" alt="image" src="https://github.com/user-attachments/assets/2df83c05-ccf0-4cf1-b2e1-21252a2e98a5" />
+<img width="1906" height="875" alt="image" src="https://github.com/user-attachments/assets/6aa14c5e-9ad0-4d9e-9e14-adbf032677f4" />
+<img width="1903" height="854" alt="image" src="https://github.com/user-attachments/assets/8b5edb98-25fc-46f7-8886-435f0d8e073c" />
+<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/6366ed87-37a0-46b6-a077-7ab77d9308c2" />
 
-<img width="1914" height="874" alt="image" src="https://github.com/user-attachments/assets/ed3c6cbe-88a7-4cd7-99f5-741013077cbd" />
+
 
 🔹 Dark Mode
-<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/8961b7b1-473d-44e8-a220-2d37e5eb7f77" />
+<img width="1896" height="864" alt="image" src="https://github.com/user-attachments/assets/3871e0de-7407-44d9-9e4b-472c3a2e026d" />
+
 
 
 # 🛠️ Local Setup:

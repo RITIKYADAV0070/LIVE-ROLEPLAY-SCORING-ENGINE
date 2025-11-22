@@ -1,4 +1,4 @@
-#✅ PitchSense AI – Live Roleplay Scoring Engine
+# ✅ PitchSense AI – Live Roleplay Scoring Engine
 
 A Vercel AI SDK powered pitch-evaluation tool built for the HSV Digital SDE I Round 2 Assignment.
 
@@ -40,7 +40,7 @@ OpenRouter Models
 
 Zod Schema Validation
 
-#🧩 Tech Stack
+# 🧩 Tech Stack
 Component	Technology
 Framework	Next.js
 AI	Vercel AI SDK + OpenRouter
@@ -48,7 +48,7 @@ Schema Validation	Zod
 Deployment	Vercel
 UI	Custom React Dashboard
 
-#📂 Project Structure
+# 📂 Project Structure
 my-app/
 │
 ├── pages/
@@ -64,14 +64,14 @@ my-app/
 ├── next.config.mjs
 └── README.md
 
-#📸 Screenshots
+# 📸 Screenshots
 🔹 Dashboard UI
 
 🔹 Evaluation Output
 
 📌 Add your screenshots in a /screenshots/ folder in the repo so GitHub renders them correctly.
 
-#🛠️ Local Setup:
+# 🛠️ Local Setup:
 
 git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE.git
 cd LIVE-ROLEPLAY-SCORING-ENGINE/my-app

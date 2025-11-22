@@ -41,12 +41,13 @@ OpenRouter Models
 Zod Schema Validation
 
 # 🧩 Tech Stack
-Component	Technology
-Framework	Next.js
-AI	Vercel AI SDK + OpenRouter
-Schema Validation	Zod
-Deployment	Vercel
-UI	Custom React Dashboard
+| Component         | Technology                     |
+|-------------------|--------------------------------|
+| Framework         | Next.js                        |
+| AI                | Vercel AI SDK + OpenRouter     |
+| Schema Validation | Zod                            |
+| Deployment        | Vercel                         |
+| UI                | Custom React Dashboard         |
 
 #  📂 Project Structure
 ```bash

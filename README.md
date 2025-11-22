@@ -1,40 +1,117 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+🚀 LIVE ROLEPLAY SCORING ENGINE
+PitchSense AI – SDE I Round 2 Assignment (Option A)
 
-## Getting Started
+This repository contains my submission for PitchSense AI — SDE I Round 2, implementing Option A: Live Roleplay Scoring Engine using the Vercel AI SDK.
 
-First, run the development server:
+The application evaluates a pitch transcript and returns a structured JSON output with scoring, category breakdown, insights, and a final verdict.
+It includes guardrails, JSON enforcement, and a clean fresher-friendly dashboard UI.
 
-```bash
+⭐ Features
+✅ LLM Evaluation (Vercel AI SDK)
+
+Uses generateText() from the official Vercel AI SDK to call OpenRouter models.
+
+✅ Structured, Stable JSON Output
+
+The backend guarantees the following format:
+
+{
+  "score": 0.82,
+  "category_scores": {
+    "clarity": 0.9,
+    "depth": 0.75,
+    "structure": 0.8
+  },
+  "insights": [
+    "Strong clarity and problem description",
+    "Could include more market depth"
+  ],
+  "verdict": "Clear and well-structured pitch with room for added detail."
+}
+
+✅ Guardrails Implemented
+
+Profanity detector
+
+Transcript length validator
+
+Strict JSON-only enforcement
+
+No chain-of-thought
+
+Simple rate limiter (5 req/min/IP)
+
+✅ Dashboard UI
+
+Sidebar layout
+
+Clean & simple fresher-friendly design
+
+Dark/Light mode toggle
+
+Score, category scores, insights, verdict
+
+Saves past evaluations locally
+
+✅ Deployable on Vercel
+
+Zero-config deployment support for Next.js.
+
+🧩 Project Structure
+my-app/
+ ├── pages/
+ │    ├── index.js               # Main dashboard UI
+ │    └── api/
+ │         └── evaluate.js       # Evaluation API endpoint (core of assignment)
+ ├── styles/
+ ├── public/
+ ├── .env.local                  # (ignored) API keys
+ ├── package.json
+ ├── next.config.mjs
+ └── README.md
+
+🛠 Tech Stack
+
+Next.js 14
+
+React
+
+Vercel AI SDK (ai)
+
+OpenRouter LLM provider
+
+Zod validation
+
+LocalStorage history
+
+🔐 Environment Variables
+
+Create a file named .env.local:
+
+OPENROUTER_API_KEY=your_api_key_here
+AI_MODEL=meta-llama/llama-3.1-70b-instruct
+
+
+⚠️ .env.local is ignored from Git and should NOT be uploaded.
+
+▶️ Installation & Running Locally
+git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE
+cd LIVE-ROLEPLAY-SCORING-ENGINE
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+App runs at:
+👉 http://localhost:3000
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+🌐 Deployment (Vercel)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+Go to https://vercel.com
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Import this repository
 
-## Learn More
+Add the 2 environment variables
 
-To learn more about Next.js, take a look at the following resources:
+Click Deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+Copy the live URL for submission

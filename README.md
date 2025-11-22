@@ -58,6 +58,7 @@ Saves past evaluations locally
 Zero-config deployment support for Next.js.
 
 🧩 Project Structure
+
 my-app/
  ├── pages/
  │    ├── index.js               # Main dashboard UI

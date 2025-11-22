@@ -11,6 +11,10 @@ This project evaluates pitch transcripts using an LLM and returns structured JSO
 All evaluation is done via Vercel AI SDK using an OpenRouter model.
 Includes guardrails, clean UI, and result visualization.
 
+# 🚀 Live Demo (Deployed on Vercel)
+👉 https://live-roleplay-scoring-engine.vercel.app/
+
+
 # 🚀 Features
 🔹 Live Pitch Evaluation
 

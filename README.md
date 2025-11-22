@@ -76,6 +76,10 @@ my-app/
 
 <img width="1914" height="874" alt="image" src="https://github.com/user-attachments/assets/ed3c6cbe-88a7-4cd7-99f5-741013077cbd" />
 
+🔹 Dark Mode
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/8961b7b1-473d-44e8-a220-2d37e5eb7f77" />
+
+
 # 🛠️ Local Setup:
 ```bash
 

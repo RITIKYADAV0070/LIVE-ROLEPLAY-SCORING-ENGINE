@@ -89,7 +89,7 @@ npm run dev
 OPENROUTER_API_KEY=your_key_here
 AI_MODEL=meta-llama/llama-3.1-70b-instruct
 ```
-📡 API Endpoint: /api/evaluate
+# 📡 API Endpoint: /api/evaluate
 ```bash
 
 Method: POST

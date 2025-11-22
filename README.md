@@ -48,7 +48,9 @@ Schema Validation	Zod
 Deployment	Vercel
 UI	Custom React Dashboard
 
-# 📂 Project Structure
+#  📂 Project Structure
+```bash
+
 my-app/
 │
 ├── pages/
@@ -63,6 +65,7 @@ my-app/
 ├── package.json
 ├── next.config.mjs
 └── README.md
+```
 
 # 📸 Screenshots
 🔹 Dashboard UI

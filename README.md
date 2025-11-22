@@ -1,40 +1,142 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# ✅ PitchSense AI – Live Roleplay Scoring Engine
 
-## Getting Started
+A Vercel AI SDK powered pitch-evaluation tool built for the HSV Digital SDE I Round 2 Assignment.
 
-First, run the development server:
+This project evaluates pitch transcripts using an LLM and returns structured JSON containing:
+✔ Score
+✔ Category scores
+✔ Insights
+✔ Verdict summary
 
+All evaluation is done via Vercel AI SDK using an OpenRouter model.
+Includes guardrails, clean UI, and result visualization.
+
+# 🚀 Live Demo (Deployed on Vercel)
+👉 https://live-roleplay-scoring-engine.vercel.app/
+
+
+# 🚀 Features
+🔹 Live Pitch Evaluation
+
+Paste a transcript → AI returns structured scoring JSON.
+
+🔹 Guardrails Implemented
+
+Profanity detection
+
+Input length limits
+
+Strict JSON-only outputs (no chain-of-thought leakage)
+
+Basic per-IP rate limiting (5 requests/min)
+
+🔹 Clean Dashboard UI
+
+Simple sidebar + form + evaluation result panel.
+
+🔹 Built with Modern Stack
+
+Next.js 14
+
+Vercel AI SDK
+
+OpenRouter Models
+
+Zod Schema Validation
+
+# 🧩 Tech Stack
+| Component         | Technology                     |
+|-------------------|--------------------------------|
+| Framework         | Next.js                        |
+| AI                | Vercel AI SDK + OpenRouter     |
+| Schema Validation | Zod                            |
+| Deployment        | Vercel                         |
+| UI                | Custom React Dashboard         |
+
+#  📂 Project Structure
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+my-app/
+│
+├── pages/
+│   ├── index.js              # Main dashboard UI
+│   └── api/
+│       └── evaluate.js       # Core Evaluation API (Vercel AI SDK)
+│
+├── public/                    # Static assets
+├── styles/                    # Global CSS / UI styles
+│
+├── .env.local                 # API keys (ignored in Git)
+├── package.json
+├── next.config.mjs
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 📸 Screenshots
+🔹 Dashboard UI
+<img width="1919" height="895" alt="image" src="https://github.com/user-attachments/assets/2d5d5f89-709e-4fd8-8581-ab55074d813f" />
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+🔹 Evaluation Output
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<img width="1914" height="874" alt="image" src="https://github.com/user-attachments/assets/ed3c6cbe-88a7-4cd7-99f5-741013077cbd" />
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+🔹 Dark Mode
+<img width="1919" height="928" alt="image" src="https://github.com/user-attachments/assets/8961b7b1-473d-44e8-a220-2d37e5eb7f77" />
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+# 🛠️ Local Setup:
+```bash
 
-To learn more about Next.js, take a look at the following resources:
+git clone https://github.com/RITIKYADAV0070/LIVE-ROLEPLAY-SCORING-ENGINE.git
+cd LIVE-ROLEPLAY-SCORING-ENGINE/my-app
+npm install
+npm run dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+# Create .env.local:
+```bash
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+OPENROUTER_API_KEY=your_key_here
+AI_MODEL=meta-llama/llama-3.1-70b-instruct
+```
+# 📡 API Endpoint: /api/evaluate
+```bash
 
-## Deploy on Vercel
+Method: POST
+Body:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+{
+  "transcript": "Your pitch transcript here..."
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+# Response:
+```bash
+
+{
+  "ok": true,
+  "result": {
+    "score": 0.82,
+    "category_scores": {
+      "clarity": 0.9,
+      "depth": 0.75,
+      "structure": 0.8
+    },
+    "insights": ["...", "..."],
+    "verdict": "..."
+  }
+}
+```
+# 🎥 Loom Video Summary (Script Included)
+
+I’ve prepared your perfect Loom script here:
+👉 “Explain what to say step-by-step”
+https://chat.openai.com/share/placeholder
+
+(Ask again and I’ll generate the exact video script.)
+
+# 📬 Author
+
+Ritik Yadav
+AI Engineer & Full-Stack Developer
+

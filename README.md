@@ -74,19 +74,18 @@ my-app/
 
 # 📸 Screenshots
 🔹 Dashboard UI
-<img width="1912" height="875" alt="image" src="https://github.com/user-attachments/assets/472e82a9-d356-43b2-8f6e-693b2037c2e3" />
+<img width="1916" height="855" alt="image" src="https://github.com/user-attachments/assets/5fa391a8-5c7a-499e-99b5-0e9f32d12b2a" />
 
 
 🔹 Evaluation Output
-<img width="1899" height="878" alt="image" src="https://github.com/user-attachments/assets/2df83c05-ccf0-4cf1-b2e1-21252a2e98a5" />
-<img width="1906" height="875" alt="image" src="https://github.com/user-attachments/assets/6aa14c5e-9ad0-4d9e-9e14-adbf032677f4" />
-<img width="1903" height="854" alt="image" src="https://github.com/user-attachments/assets/8b5edb98-25fc-46f7-8886-435f0d8e073c" />
-<img width="1919" height="876" alt="image" src="https://github.com/user-attachments/assets/6366ed87-37a0-46b6-a077-7ab77d9308c2" />
+<img width="1919" height="849" alt="image" src="https://github.com/user-attachments/assets/af6308cb-3d1d-40fa-a685-6ed4b84c4c9f" />
+<img width="1919" height="854" alt="image" src="https://github.com/user-attachments/assets/6c0ceef1-0371-406a-b010-53af5c224964" />
+<img width="1918" height="851" alt="image" src="https://github.com/user-attachments/assets/225168b4-0fe2-40d7-bb71-f8818bb91f80" />
+<img width="1914" height="862" alt="image" src="https://github.com/user-attachments/assets/0cdd0932-7fc5-4e39-a382-471753a7735c" />
 
 
-
-🔹 Dark Mode
-<img width="1896" height="864" alt="image" src="https://github.com/user-attachments/assets/3871e0de-7407-44d9-9e4b-472c3a2e026d" />
+🔹 Light Mode
+<img width="1897" height="854" alt="image" src="https://github.com/user-attachments/assets/54ef0f28-2d9b-4141-98eb-02cea48dc177" />
 
 
 

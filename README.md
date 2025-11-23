@@ -186,7 +186,7 @@ Body:
   }
 }
 ```
-# 🎥 Loom Video Summary (Script Included)
+# 🎥 Loom Video 
   https://www.loom.com/share/7f37e56eb38340bdbe887927884c5448
 
 # 📬 Author

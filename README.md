@@ -187,12 +187,7 @@ Body:
 }
 ```
 # 🎥 Loom Video Summary (Script Included)
-
-I’ve prepared your perfect Loom script here:
-👉 “Explain what to say step-by-step”
-https://chat.openai.com/share/placeholder
-
-(Ask again and I’ll generate the exact video script.)
+  https://www.loom.com/share/7f37e56eb38340bdbe887927884c5448
 
 # 📬 Author
 
